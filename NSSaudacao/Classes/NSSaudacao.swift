@@ -49,7 +49,7 @@ public class NSSaudacao: NSObject {
         return "Boa noite!"
     }
     
-    func msgWhatsApp() -> String {
+    public class func msgWhatsApp() -> String {
         // Resgatar o período atual
         let periodo = NSSaudacao.definirPeriodo()
         // count msg periodo atual
