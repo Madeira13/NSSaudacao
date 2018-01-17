@@ -12,7 +12,7 @@ enum Periodo {
     case manha, tarde, noite
 }
 
-class NSSaudacao: NSObject {
+public class NSSaudacao: NSObject {
     
     class func definirPeriodo() -> Periodo {
         // Resgatar a data atual
@@ -32,7 +32,7 @@ class NSSaudacao: NSObject {
         return Periodo.manha
     }
     
-    class func saudacao() -> String {
+    public class func saudacao() -> String {
         // Resgatar o período atual
         let periodo = NSSaudacao.definirPeriodo()
         
